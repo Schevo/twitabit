@@ -1,0 +1,30 @@
+h1 {
+	font-size: 16pt;
+	}
+	
+h2 {
+	font-size: 14pt;
+	margin-top: 1em;
+	}
+	
+label {
+	padding-top: 1em;
+	display: block;
+	}
+	
+div.buttons {
+	padding-top: 1em;
+	}
+	
+div.bit {
+	padding-top: 1em;
+	}
+	
+.error {
+	color: red;
+	}
+	
+p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}

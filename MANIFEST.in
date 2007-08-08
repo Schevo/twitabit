@@ -1,0 +1,2 @@
+recursive-include twitabit/public *
+recursive-include twitabit/templates *

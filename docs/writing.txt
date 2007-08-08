@@ -1,0 +1,83 @@
+==================
+ Writing Twitabit
+==================
+
+paster create --template=pylons Twitabit
+
+Edit setup.cfg, add always_copy=False
+
+Edit setup.py, tweak dependencies
+
+Tweak development.ini and twitabit/lib/base.py according to 
+http://wiki.pylonshq.com/display/pylonscookbook/Using+Schevo+databases+with+Pylons
+
+Create schema
+ twitabit/schema
+ twitabit/schema/__init__.py
+ twitabit/schema/twitabit_001.py
+
+Create policy
+ twitabit/policy
+ twitabit/policy/__init__.py
+ twitabit/policy/twitabit_policy_001.py
+
+schevo db create -xa twitabit dev.db
+
+schevo shell dev.db
+
+>>>admin = db.User.findone(name='admin')
+>>>admin.f.password.compare('alwujfoa')
+---True
+>>>admin.current_status.text
+---u'Created a new twitabit database!'
+>>>tx = admin.t.change_status()
+>>>tx.f.text = 'New Status'
+>>>tx.text = 'New Status'
+>>>db.execute(tx)
+---<Status entity oid:2 rev:0>
+>>>admin.current_status.text
+---u'New Status'
+
+Add a new controller
+$ paster controller bits
+
+Edit twitabit.routing
+
+Remove twitabit/public/index.html
+
+Edit twitabit.controllers.bits, index method
+
+Create twitabit/templates/bits
+Create twitabit/templates/bits/index.html
+
+Create twitabit/public/css
+Create twitabit/public/css/master.css
+Install twitabit/public/css/reset-fonts-grids.css
+
+Edit master.css
+
+auth
+----
+
+edit twitabit.config.middleware
+
+edit development.ini [app:twitabit] section
+
+$ paster controller auth
+
+Edit twitabit.config.routing
+
+Edit twitabit.controllers.auth,
+ add signin method
+ add signout method
+
+Add twitabit/templates/auth,
+  .../signin.mako
+  .../signin_done.mako
+  .../signin_fail.mako
+  .../signout_done.mako
+  .../signout_unnecessary.mako
+
+Add twitabit/templates/layout,
+  .../standard.mako
+
