@@ -51,6 +51,7 @@ setup(
     platforms=['UNIX', 'Windows'],
 
     install_requires=[
+    'PasteDeploy >= 1.3.1',             # To prevent dependency probs.
     "Pylons == dev, >= 0.9.6dev-r2294",
     'Schevo == dev, >= 3.1a1dev-r3383',
     'SchevoPolicy == dev, >= 1.0a1dev-r3384',
