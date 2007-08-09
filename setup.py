@@ -52,6 +52,7 @@ setup(
     "Pylons == dev, >= 0.9.6dev-r2294",
     'Schevo == dev, >= 3.1a1dev-r3383',
     'SchevoPolicy == dev, >= 1.0a1dev-r3384',
+    'AuthKit == dev, >= 0.4.0dev-r98',
     ],
     
     packages=find_packages(exclude=['ez_setup']),
