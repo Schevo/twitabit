@@ -57,6 +57,10 @@ setup(
     'AuthKit == dev, >= 0.4.0dev-r98',
     ],
     
+    dependency_links = [
+    'http://schevo.org/wiki/Twitabit',
+    ],
+
     packages=find_packages(exclude=['ez_setup']),
     
     include_package_data=True,
