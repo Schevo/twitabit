@@ -9,8 +9,10 @@ setup(
     name='Twitabit',
     
     version="1.0a1",
+
+    description = 'Simple example application using Schevo',
     
-    description="""
+    long_description="""
     Twit-a-bit is a simple example application that demonstrates how to
     integrate the following software packages:
 
