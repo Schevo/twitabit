@@ -10,18 +10,48 @@ setup(
     
     version="1.0a1",
     
-    #description="",
+    description="""
+    Twit-a-bit is a simple example application that demonstrates how to
+    integrate the following software packages:
+
+    * Schevo
+    * SchevoPolicy
+    * Pylons
+    * AuthKit
+
+    The app itself is intentionally narrow in scope:
+
+    * register new accounts
+    * post bits of information
+    * read an individual's bits
+    * read all users' bits
     
-    #author="",
+    The latest development version is available in a `Subversion
+    repository <http://schevo.org/svn/trunk/apps/Twitabit#egg=Twitabit-dev>`__.
+    """,
     
-    #author_email="",
+    classifiers=[
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Topic :: Database :: Database Engines/Servers',
+    'Topic :: Software Development :: Libraries :: Application Frameworks',
+    ],
+
+    author='Orbtech, L.L.C. and contributors',
+    author_email='schevo@googlegroups.com',
     
-    #url="",
-    
+    url='http://schevo.org/wiki/Twitabit',
+
+    license='MIT',
+
+    platforms=['UNIX', 'Windows'],
+
     install_requires=[
-    "Pylons >= 0.9.6dev-r2294",
-    'Schevo >= 3.1a1dev-r3383',
-    'SchevoPolicy >= 1.0a1dev-r3384',
+    "Pylons == dev, >= 0.9.6dev-r2294",
+    'Schevo == dev, >= 3.1a1dev-r3383',
+    'SchevoPolicy == dev, >= 1.0a1dev-r3384',
     ],
     
     packages=find_packages(exclude=['ez_setup']),
