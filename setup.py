@@ -59,6 +59,8 @@ setup(
     
     dependency_links = [
     'http://schevo.org/wiki/Twitabit',
+    'http://schevo.org/files/thirdparty/',
+    'http://turbogears.org/download/filelist.html',
     ],
 
     packages=find_packages(exclude=['ez_setup']),
