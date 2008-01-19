@@ -28,8 +28,7 @@ setup(
     * read an individual's bits
     * read all users' bits
     
-    The latest development version is available in a `Subversion
-    repository 
+    You can also get the `latest development version
     <http://getschevo.org/hg/repos.cgi/twitabit-dev/archive/tip.tar.gz#egg=Twitabit-dev>`__.
     """,
     
