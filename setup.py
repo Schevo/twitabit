@@ -29,7 +29,8 @@ setup(
     * read all users' bits
     
     The latest development version is available in a `Subversion
-    repository <http://schevo.org/svn/trunk/apps/Twitabit#egg=Twitabit-dev>`__.
+    repository 
+    <http://getschevo.org/hg/repos.cgi/twitabit-dev/archive/tip.tar.gz#egg=Twitabit-dev>`__.
     """,
     
     classifiers=[
