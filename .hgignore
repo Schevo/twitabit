@@ -1,0 +1,8 @@
+syntax:glob
+*.pyc
+*.pyo
+*.egg-info/*
+build/*
+dist/*
+data/*
+*.db*

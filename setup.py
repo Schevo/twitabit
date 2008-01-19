@@ -52,16 +52,14 @@ setup(
 
     install_requires=[
     'PasteDeploy >= 1.3.1',             # To prevent dependency probs.
-    "Pylons == dev, >= 0.9.6dev-r2294",
-    'Schevo == dev, >= 3.1a1dev-r3383',
-    'SchevoPolicy == dev, >= 1.0a1dev-r3384',
+    "Pylons >= 0.9.6.1",
+    'Schevo == dev, >= 3.1a1dev',
+    'SchevoPolicy == dev, >= 1.0a1dev',
     'AuthKit == dev, >= 0.4.0dev-r114',
     ],
     
     dependency_links = [
     'http://schevo.org/wiki/Twitabit',
-    'http://schevo.org/files/thirdparty/',
-    'http://turbogears.org/download/filelist.html',
     ],
 
     packages=find_packages(exclude=['ez_setup']),
