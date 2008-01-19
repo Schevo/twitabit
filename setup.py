@@ -8,7 +8,7 @@ except ImportError:
 setup(
     name='Twitabit',
     
-    version="1.0a1",
+    version="1.0a2",
 
     description = 'Simple example application using Schevo',
     
